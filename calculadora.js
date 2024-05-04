@@ -44,6 +44,8 @@ document.addEventListener('keydown', function (event) {
     } else if (key == 'Backspace') {//En caso de que se pulse la tecla de borrar, borrara el ultimo caracter
         let string = pantalla.innerText.toString();
         pantalla.innerText = string.slice(0, -1);
+    } else if (key === 'Delete') {//En caso de que se pulse la tecla de suprimir, borrara todo lo que hay en la pantalla
+        pantalla.innerText = ''
     } else if (key == '+' || key == '-' || key == '*' || key == '/' || key == '^' || key == '(' || key == ')')//Mostrara cualquiera de estos caracteres por pantalla
     pantalla.innerText += key; 
 
